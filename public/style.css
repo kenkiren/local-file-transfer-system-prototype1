@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+button {
+  background: #2e6ee0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 6px 6px 6px 0;
+}
+
+button:disabled {
+  background: #a9bde3;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: #888;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  width: 60%;
+}
+
+.code-display {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: #eef3ff;
+  border: 1px dashed #2e6ee0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  display: inline-block;
+  margin: 8px 0;
+}
+
+.progress-outer {
+  background: #e0e0e0;
+  border-radius: 4px;
+  height: 18px;
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress-inner {
+  background: #2e6ee0;
+  height: 100%;
+  color: #fff;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.status {
+  color: #333;
+  font-style: italic;
+}
+
+.error {
+  color: #c0392b;
+}
