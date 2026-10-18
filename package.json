@@ -1,0 +1,13 @@
+{
+  "name": "local-file-transfer-prototype",
+  "version": "1.0.0",
+  "description": "Student prototype: transfer a file between two devices on the same Wi-Fi network.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.22.0"
+  }
+}
