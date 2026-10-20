@@ -110,9 +110,9 @@ app.put("/api/session/:code/upload", (req, res) => {
 
   const fileName = decodeURIComponent(req.headers["x-file-name"] || "file");
   const fileSize = parseInt(req.headers["x-file-size"] || "0", 10);
-  const filePath = path.join(UPLOAD_DIR, `${code}-${fileName}`);
+  const filePath = path.join(UPLOAD_DIR, `${code}-${fileName}`);// this line ensures that the uploaded file is saved in the UPLOAD_DIR with a unique name based on the session code and original file name.
 
-  const writeStream = fs.createWriteStream(filePath);
+  const writeStream = fs.createWriteStream(filePath); //this line creates a writable stream to the specified file path, allowing the server to write incoming file data directly to disk.
   let bytesReceived = 0;
 
   req.on("data", (chunk) => {
@@ -206,6 +206,7 @@ wss.on("connection", (ws) => {
   });
 });
 
+// this is the main entry point of the server, where it starts listening for incoming HTTP and WebSocket connections on the specified port and IP address. It also logs the local and network URLs for accessing the server.
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`Local File Transfer server running`);
   console.log(`Open on this device:  http://localhost:${PORT}`);
